@@ -1,0 +1,201 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap");
+
+// body {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+$primary-gradient: linear-gradient(to right, #4e4376, #2b5876);
+$mango-gradient: linear-gradient(to right, #ffa751, #ffe259);
+$text-color: #f7f9f9;
+$Montserrat: "Montserrat", cursive;
+$Lobster: "Lobster", cursive;
+$primary-shadow: 3px 4px 7px rgba(27, 27, 27, 0.534);
+$border-color: rgba(0, 0, 0, 0.329);
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  background: #ffe259;
+  background: $mango-gradient;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98%;
+  max-height: 610px;
+
+  .panel {
+    width: 60%;
+    height: 72%;
+    box-shadow: $primary-gradient;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  height: 100%;
+  background: white;
+}
+
+.liquid {
+  background: url("../assets/Wave.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h4 {
+    text-align: left;
+    color: whitesmoke;
+    padding: 0rem 1.5rem;
+    font-family: $Montserrat;
+  }
+}
+
+.owl-carousel {
+  width: 100%;
+  height: 320px;
+  max-height: 330px;
+
+  .login-img {
+    float: right;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.owl-dots {
+  position: fixed;
+  padding: 3rem 1.2rem;
+  display: flex !important;
+  flex-direction: column;
+  transform: translateY(-240px);
+
+  button {
+    border-radius: 5rem;
+    margin: 0.3rem 0;
+
+    span {
+      background: $text-color !important;
+      margin: 0rem 0.6rem !important;
+    }
+  }
+
+  .active {
+    border: 1px solid #ffd765 !important;
+
+    span {
+      background: #ffd765 !important;
+      margin: 0.3rem 0.5rem !important;
+    }
+  }
+}
+
+.follow {
+  padding: 0 4rem;
+  padding-top: 1.4rem;
+  font-family: $Lobster;
+  color: whitesmoke;
+  position: relative;
+  font-size: 0.9rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 12%;
+    width: 100px;
+    border: 1px solid whitesmoke;
+    margin-top: 1.1rem;
+  }
+
+  .social {
+    margin-left: 0.4rem;
+
+    &:hover {
+      color: #ffd765;
+    }
+  }
+}
+
+// Second column login
+.btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4rem;
+  background: #2b5876;
+  color: whitesmoke;
+  font-size: 0.7rem;
+  font-family: $Montserrat;
+  box-shadow: $primary-shadow;
+  cursor: pointer;
+}
+
+.login .btn-signup,
+form .btn-login {
+  background: $primary-gradient;
+  float: right;
+  margin: 1rem;
+}
+
+.titles {
+  margin-bottom: 2.2rem;
+}
+
+form {
+  height: 55%;
+  min-height: 280px;
+  margin-top: 5.5rem;
+
+  h3,
+  h6 {
+    font-family: $Montserrat;
+    padding: 0;
+    margin: 0;
+    padding-left: 3rem;
+  }
+
+  h6 {
+    padding-left: 4.5rem;
+    font-family: $Lobster;
+    color: #444444d2;
+  }
+  .form-group {
+    text-align: left;
+    border: 1px solid $border-color;
+    margin-top: 0.9rem;
+    margin-right: 2rem;
+    border-radius: 3rem;
+
+    .form-input {
+      padding: 0.5rem 1rem;
+      background: transparent;
+      border: none;
+      font-family: $Montserrat;
+      font-size: 0.9rem;
+      overflow: hidden;
+    }
+  }
+  input:focus {
+    outline: none;
+  }
+  .input-icon {
+    display: inline;
+    color: $border-color;
+
+    &:focus {
+      color: black;
+    }
+  }
+  .btn-login {
+    float: none;
+    padding: 0.8rem 5rem;
+    margin-left: 2rem;
+  }
+}

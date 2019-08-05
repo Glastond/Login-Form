@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap");
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  background: #ffe259;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa751), to(#ffe259));
+  background: linear-gradient(to right, #ffa751, #ffe259);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 98%;
+  max-height: 610px;
+}
+
+.container .panel {
+  width: 60%;
+  height: 72%;
+  -webkit-box-shadow: linear-gradient(to right, #4e4376, #2b5876);
+          box-shadow: linear-gradient(to right, #4e4376, #2b5876);
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
+  height: 100%;
+  background: white;
+}
+
+.liquid {
+  background: url("../assets/Wave.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.liquid h4 {
+  text-align: left;
+  color: whitesmoke;
+  padding: 0rem 1.5rem;
+  font-family: "Montserrat", cursive;
+}
+
+.owl-carousel {
+  width: 100%;
+  height: 320px;
+  max-height: 330px;
+}
+
+.owl-carousel .login-img {
+  float: right;
+  width: 400px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.owl-dots {
+  position: fixed;
+  padding: 3rem 1.2rem;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateY(-240px);
+          transform: translateY(-240px);
+}
+
+.owl-dots button {
+  border-radius: 5rem;
+  margin: 0.3rem 0;
+}
+
+.owl-dots button span {
+  background: #f7f9f9 !important;
+  margin: 0rem 0.6rem !important;
+}
+
+.owl-dots .active {
+  border: 1px solid #ffd765 !important;
+}
+
+.owl-dots .active span {
+  background: #ffd765 !important;
+  margin: 0.3rem 0.5rem !important;
+}
+
+.follow {
+  padding: 0 4rem;
+  padding-top: 1.4rem;
+  font-family: "Lobster", cursive;
+  color: whitesmoke;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.follow::after {
+  content: "";
+  position: absolute;
+  left: 12%;
+  width: 100px;
+  border: 1px solid whitesmoke;
+  margin-top: 1.1rem;
+}
+
+.follow .social {
+  margin-left: 0.4rem;
+}
+
+.follow .social:hover {
+  color: #ffd765;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4rem;
+  background: #2b5876;
+  color: whitesmoke;
+  font-size: 0.7rem;
+  font-family: "Montserrat", cursive;
+  -webkit-box-shadow: 3px 4px 7px rgba(27, 27, 27, 0.534);
+          box-shadow: 3px 4px 7px rgba(27, 27, 27, 0.534);
+  cursor: pointer;
+}
+
+.login .btn-signup,
+form .btn-login {
+  background: -webkit-gradient(linear, left top, right top, from(#4e4376), to(#2b5876));
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  float: right;
+  margin: 1rem;
+}
+
+.titles {
+  margin-bottom: 2.2rem;
+}
+
+form {
+  height: 55%;
+  min-height: 280px;
+  margin-top: 5.5rem;
+}
+
+form h3,
+form h6 {
+  font-family: "Montserrat", cursive;
+  padding: 0;
+  margin: 0;
+  padding-left: 3rem;
+}
+
+form h6 {
+  padding-left: 4.5rem;
+  font-family: "Lobster", cursive;
+  color: #444444d2;
+}
+
+form .form-group {
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.329);
+  margin-top: 0.9rem;
+  margin-right: 2rem;
+  border-radius: 3rem;
+}
+
+form .form-group .form-input {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  font-family: "Montserrat", cursive;
+  font-size: 0.9rem;
+  overflow: hidden;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form .input-icon {
+  display: inline;
+  color: rgba(0, 0, 0, 0.329);
+}
+
+form .input-icon:focus {
+  color: black;
+}
+
+form .btn-login {
+  float: none;
+  padding: 0.8rem 5rem;
+  margin-left: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
